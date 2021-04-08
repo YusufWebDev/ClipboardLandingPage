@@ -1,0 +1,23 @@
+.Clipboard-contents {
+	padding: 0 2rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 5rem;
+
+	@media (min-width: 71.875rem) {
+		//1150px
+	}
+	.subTitle {
+		margin-bottom: 4.25rem;
+	}
+	img {
+		margin-bottom: 8.5625rem;
+
+		@media (min-width: 71.875rem) {
+			//1150px
+			padding: 0 10rem;
+			margin-bottom: 5rem;
+		}
+	}
+}

@@ -1,0 +1,103 @@
+.section-head {
+	// border: 2px solid red;
+	padding: 0;
+	margin-bottom: 8.125rem;
+
+	&__container {
+		display: flex;
+
+		flex-direction: column;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__bgLogo {
+		background-image: url("../images/bg-header-mobile.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 16rem;
+		position: relative;
+		// margin: 3.75rem auto;
+		// border: 1px solid blue;
+
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			// margin: 3rem auto 0;
+			height: 50%;
+		}
+
+		@media (min-width: 37.5rem) {
+			background-image: url("../images/bg-header-desktop.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	}
+	&__text {
+		padding: 0 2rem;
+		margin: 0 auto;
+
+		&__title {
+			margin-top: 0;
+			font-weight: 600;
+			font-size: 2rem;
+		}
+		&__subTitle {
+			color: $clr-neut-GrayishBlue;
+			margin: 1.5rem 0 3.125rem 0;
+			font-size: 0.95rem;
+			line-height: 1.6;
+		}
+	}
+
+	&__CTAbtn {
+		display: flex;
+		flex-direction: column;
+		padding: 0 2rem;
+		align-items: center;
+
+		@media (min-width: 37.5rem) {
+			//600px
+			flex-direction: row;
+			align-items: center;
+			padding: 0;
+			margin: 0 auto;
+		}
+	}
+	.btn-ios {
+		margin-bottom: 1.5rem;
+		background-color: $clr-prim-StrongCyan;
+		box-shadow: 0 10px 20px rgba($clr-prim-StrongCyan, 0.5);
+		width: 100%;
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		@media (min-width: 37.5rem) {
+			//600px
+			margin: 0 1rem;
+			width: auto;
+			padding: 0.8rem 2.625rem;
+		}
+	}
+	.btn-mac {
+		background-color: $clr-prim-LightBlue;
+		box-shadow: 0 10px 20px rgba($clr-prim-LightBlue, 0.5);
+		width: 100%;
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		@media (min-width: 37.5rem) {
+			//600px
+			margin: 0 auto;
+			width: auto;
+			padding: 0.8rem 2.625rem;
+		}
+	}
+}
